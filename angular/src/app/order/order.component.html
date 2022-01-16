@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+<div class="content">
+  <div class="wrapper-create">
+
+    <div>
+
+    </div>
+
+    <div class="card text-dark bg-light mb-3 card-create" style="width: 20rem;"
+         *ngFor="let rec of receipt">
+      <div class="card-header order-update">
+        <div>Стол № {{rec.receiptId}}</div>
+        <button class="btn-update" [routerLink]="['/create', this.userStorage.getUser().id]"
+                [queryParams]="{isEdit: true, receiptId: rec.receiptId}"><i class="bi bi-pencil-square"></i>
+        </button>
+      </div>
+      <ul class="list-group list-group-flush" *ngFor="let prod of rec.products">
+        <li class="list-group-item order">
+          <div>{{prod.name}}</div>
+          <div>{{prod.count}}</div>
+          <div>{{prod.price}}</div>
+        </li>
+      </ul>
+      <div class="card-footer bg-white">
+        <div class="amount">
+          <div>Итого</div>
+          <div>{{rec.amount}} руб.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

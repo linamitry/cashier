@@ -1,0 +1,11 @@
+div.content {
+  margin-left: 300px;
+  padding: 30px 20px 20px;
+  height: 1000px;
+}
+
+.report {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

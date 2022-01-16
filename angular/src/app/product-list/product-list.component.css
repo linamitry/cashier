@@ -1,0 +1,58 @@
+
+
+div.content {
+  margin-left: 300px;
+  height: 1000px;
+  position: relative;
+}
+
+.menu {
+  padding: 30px 20px 20px;
+  height: 100%;
+  overflow: auto;
+  position: absolute;
+  left: 50%;
+}
+
+.create-order {
+  padding: 30px 20px 20px;
+}
+
+.order {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.add {
+  display: flex;
+}
+
+.count {
+  margin-right: 10px;
+}
+
+.text-order {
+  line-height: 37px;
+}
+
+.category-btn {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cat-btn {
+  margin: 2px;
+}
+.product-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-prod {
+  display: flex;
+  flex-direction: row;
+}
+
+

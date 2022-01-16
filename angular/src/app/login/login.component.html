@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <form class="form" (ngSubmit)="onSubmit()" #userForm="ngForm">
+        <input type="text" [(ngModel)]="user.login"
+               id="login"
+               class="fadeIn second"
+               name="login"
+               placeholder="Логин">
+
+        <input type="text" [(ngModel)]="user.password"
+               id="password"
+               class="fadeIn third"
+               name="login"
+               placeholder="Пароль">
+
+        <button type="submit"
+                class="btn btn-dark">Войти
+        </button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+

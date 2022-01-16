@@ -1,0 +1,43 @@
+<div class="create-order">
+
+
+  <form class="form" [formGroup]="orderForm!!" (ngSubmit)="onSubmit()">
+    <div class="card text-dark bg-light mb-3 card-create" style="width: 70%;">
+<!--      <div class="card-header">Стол №</div>-->
+      <ul class="list-group list-group-flush" formArrayName="items"
+          *ngFor="let prod of userItems['controls']; let i=index">
+        <div [formGroupName]="i">
+          <li class="list-group-item order">
+            <input class="input-none-decoration"  formControlName="name"/>
+            <input formControlName="count"
+                   type="number"
+                   value="1"
+                   min="1"
+                   class="form-control"
+                   placeholder="1"
+                   style="width: 50px" (change)="amountCalc()">
+            <input class="input-none-decoration" formControlName="price"/>
+            <button class="btn-delete" (click)="delete(i)"><i class="bi bi-x-square"></i></button>
+          </li>
+        </div>
+      </ul>
+      <div class="card-footer bg-white">
+        <div class="amount">
+          <div>Итого</div>
+          <div>{{this.amount}} руб.</div>
+        </div>
+      </div>
+    </div>
+    <button *ngIf="!isEdit" type="submit"
+            class="btn btn-dark"
+    (click)="createReceipt()">Создать
+    </button>
+
+    <button *ngIf="isEdit" type="submit"
+            class="btn btn-dark"
+            (click)="updateReceipt()">Сохранить
+    </button>
+  </form>
+
+
+</div>

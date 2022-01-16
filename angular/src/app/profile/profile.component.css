@@ -1,0 +1,20 @@
+body{
+  margin-top:20px;
+  color: #1a202c;
+  text-align: left;
+  background-color: #e2e8f0;
+}
+.main-body {
+  padding: 15px;
+}
+
+.profile-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+div.content {
+  margin-left: 300px;
+  padding: 30px 20px 20px;
+  height: 1000px;
+}

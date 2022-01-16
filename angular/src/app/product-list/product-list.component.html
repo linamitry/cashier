@@ -1,0 +1,20 @@
+<div class="col-6 bg-secondary menu">
+
+  <div class="row row-prod">
+
+    <div class="col-5 category-btn">
+      <button type="button" class="btn btn-light cat-btn"
+              *ngFor="let item of category"
+              (click)="findProductByCategory(item.name!)">
+        {{item.name}}
+      </button>
+    </div>
+
+    <div class="product-list col-5" >
+      <button *ngFor="let prod of product" [value]="prod.id"
+              (click)="addProduct(prod.id!!)">
+        {{prod.name}}
+      </button>
+    </div>
+  </div>
+</div>

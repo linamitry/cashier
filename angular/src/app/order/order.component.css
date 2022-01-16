@@ -1,0 +1,44 @@
+div.content {
+  margin-left: 300px;
+  padding: 30px 20px 20px;
+  height: 1000px;
+}
+
+.wrapper-create {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-create {
+  margin: 20px;
+}
+
+.order {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.amount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.order-update {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-update:focus {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.btn-update {
+  border: none;
+  outline: none;
+  background: none;
+}

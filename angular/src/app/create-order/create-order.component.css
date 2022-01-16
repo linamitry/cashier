@@ -1,0 +1,94 @@
+/*.create-order {*/
+/*  padding: 30px 20px 20px;*/
+/*}*/
+
+.wrapper-create {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-create {
+  margin: 20px;
+}
+
+.order {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.amount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+}
+
+input {
+  text-align: center;
+  border: 1px solid #6C757D;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield !important;
+  -moz-appearance: textfield !important;
+  appearance: textfield !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.wrapper-input {
+  padding: 0;
+  border: 1px #dcd3d3 solid;
+  width: 60px;
+  height: 30px;
+  display: flex;
+  margin-right: 20px;
+}
+
+.plusminus {
+  padding: 0;
+  height: 100%;
+  width: 30%;
+  background: white;
+  border: none;
+  font-size: 20px;
+  color: #5f5fce;
+}
+
+.num {
+  padding: 0;
+  height: 100%;
+  width: 39%;
+  border: none;
+  font-size: 15px;
+}
+
+.input-none-decoration {
+  background-color:transparent;
+  border: 0px solid;
+  height:30px;
+  width:260px;
+}
+.input-none-decoration:focus {
+  outline:none;
+}
+
+.btn-delete {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.btn-delete:focus {
+  border: none;
+  outline: none;
+  background: none;
+}
